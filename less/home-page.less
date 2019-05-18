@@ -57,7 +57,13 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn {.button-theme(@btn-color, @btn-bg-color);
+        font-size: 1.75rem;
+        border-radius: 5px;
+        text-align: center;
+        width: 100px;
+        padding: 15px 0;
+
       }
     }
 
@@ -72,4 +78,5 @@
       }
     }
   }
+
 }// home
