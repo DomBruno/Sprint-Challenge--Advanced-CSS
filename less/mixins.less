@@ -1,7 +1,9 @@
 // Mixins Here
 
 
-.nav-theme { justify-content: center;
+.nav-custom-theme(@justify)
+{ display: flex;
+    justify-content: @justify;
     background-color: @nav-bg;
     color: @nav-font;
     border: 1 solid @nav-border; 

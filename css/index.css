@@ -1,17 +1,4 @@
 @phone (max-width: 500px);
-.nav-theme {
-  justify-content: center;
-  background-color: #F6F6F6;
-  color: #454A59;
-  border: 1 solid #F1F1F1;
-}
-.nav-theme h1 {
-  font-size: 6rem;
-}
-.nav-theme a {
-  text-decoration: none;
-  font-size: 2.5rem;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -175,16 +162,14 @@ p {
   margin: 0 auto;
 }
 .topper {
-  display: flex;
-  justify-content: space-between;
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
   justify-content: center;
   background-color: #F6F6F6;
   color: #454A59;
   border: 1 solid #F1F1F1;
-  margin-bottom: 10px;
 }
 .topper h1 {
   font-size: 6rem;
@@ -194,15 +179,15 @@ p {
   font-size: 2.5rem;
 }
 nav {
-  display: flex;
-  justify-content: space-between;
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  justify-content: center;
+  display: flex;
+  justify-content: space-around;
   background-color: #F6F6F6;
   color: #454A59;
   border: 1 solid #F1F1F1;
+  padding-top: 15px;
 }
 nav h1 {
   font-size: 6rem;
@@ -210,6 +195,10 @@ nav h1 {
 nav a {
   text-decoration: none;
   font-size: 2.5rem;
+}
+nav a {
+  font-size: 1.75rem;
+  padding-bottom: 10px;
 }
 footer {
   color: #22283B;
