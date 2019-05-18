@@ -1,4 +1,3 @@
-@phone (max-width: 500px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -178,6 +177,12 @@ p {
   text-decoration: none;
   font-size: 2.5rem;
 }
+@media (max-width: 500px) {
+  .topper {
+    flex-direction: column;
+    padding-left: 1px;
+  }
+}
 nav {
   max-width: 800px;
   width: 100%;
@@ -200,6 +205,11 @@ nav a {
   font-size: 1.75rem;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  nav {
+    text-align: center;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -213,6 +223,13 @@ footer {
 footer p {
   font-size: 1.75rem;
   color: black;
+}
+@media (max-width: 500px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 0 10px;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -231,6 +248,20 @@ footer p {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    display: flex;
+  }
+  .home .space-images .blast {
+    justify-content: center;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -247,8 +278,22 @@ footer p {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+    flex-direction: column;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    order: 2;
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -269,6 +314,11 @@ footer p {
   color: #22283A;
   background-color: white;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -277,4 +327,12 @@ footer p {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    order: 1;
+  }
 }
