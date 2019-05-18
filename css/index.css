@@ -181,6 +181,7 @@ p {
   .topper {
     flex-direction: column;
     padding-left: 1px;
+    width: 100%;
   }
 }
 nav {
@@ -208,6 +209,7 @@ nav a {
 @media (max-width: 500px) {
   nav {
     text-align: center;
+    width: 100%;
   }
 }
 footer {
@@ -229,6 +231,7 @@ footer p {
     flex-direction: column;
     align-items: center;
     padding: 0 0 0 10px;
+    width: 100%;
   }
 }
 .home .intro h2 {
@@ -253,7 +256,9 @@ footer p {
     display: flex;
   }
   .home .space-images .blast {
-    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 15px;
   }
   .home .space-images .sky {
     display: none;
@@ -281,7 +286,7 @@ footer p {
 @media (max-width: 500px) {
   .home .walk {
     width: 100%;
-    padding: 0;
+    padding: 15px;
     margin-top: 15px;
     flex-direction: column;
   }
@@ -332,6 +337,8 @@ footer p {
   .home .walk .walk-img {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding: 15px;
     margin: 0 auto;
     order: 1;
   }
