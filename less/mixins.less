@@ -1,1 +1,20 @@
 // Mixins Here
+
+
+.nav-custom-theme(@justify)
+{ display: flex;
+    justify-content: @justify;
+    background-color: @nav-bg;
+    color: @nav-font;
+    border: 1 solid @nav-border; 
+    h1 {font-size: 6rem;}
+    a {text-decoration: none;
+    font-size: 2.5rem}
+    }
+
+ .button-theme(@color, @bg) {
+        color: @color;
+        background-color:@bg;
+        &:hover {color: @bg;
+        background-color:@color;}
+ }
